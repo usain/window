@@ -4,6 +4,10 @@
 // The following html5-boilerplate styles should
 // probably be customized for each site
 //-----------------------------------------------
+* {
+	font-family: 'Open Sans', helvetica, sans-serif;
+}
+
 body, select, input, textarea {
   color: $font-color;
   // Set your base font here, to apply evenly
@@ -14,13 +18,171 @@ body, select, input, textarea {
 //-----------------------------------
 // Add your own custom styles below
 //-----------------------------------
+html {
+	width: 320px;
+}
 
 body {}
 
 #container {}
 
-header {}
+header {
+		position: fixed;
+		top: 0;
+		z-index: 100000;
+		background: white;
+		width: 100%;
+		max-width: 320px;
 
-#main {}
+	#mc_embed_signup {
+		background: $mailchimp-background-color;
+		padding: 10px;
+		color: white;
 
-footer {}
+		p {
+			float: left;
+		}
+
+		.close {
+			color: white;
+			text-shadow: none;
+			opacity: 1;
+		}
+
+		.btn {
+			width: 100%;
+		}
+	}
+
+	nav {
+		padding: 10px;
+
+			#navDropdown{
+
+			display: inline-block;
+			float: left;
+			margin-left: 34px;
+			margin-top: 5px;
+
+
+				.bar {
+					display: block;
+					background: $mailchimp-background-color;
+					width: 42px;
+					height: 6px;
+					border-radius: 3px;
+					margin-bottom: 2px;
+				}
+
+			}
+
+			.navItems {
+				position: absolute;
+				top: -90000px;
+			}
+
+			#logo {
+				float: left;
+
+				p {
+					margin: 0;
+				}
+
+			}
+
+			#logo, .social {
+				line-height: 44px;
+				font-size: 24px;
+				font-weight: bold;
+			}
+
+			.social ul {
+				display: block;
+				float: right;
+				margin: 0;
+				padding: 0;
+
+				li {
+					float: left;
+
+					a{
+						margin-right: 10px;
+					}
+
+					.icon-envelope {
+						margin: 0;
+					}
+				}
+			}
+	}
+
+}
+
+#main {
+	margin-top: 64px;
+
+	.current{
+
+		a {
+			display: block;
+		}
+
+	}
+
+	h2 {
+		font-size: 24px;
+		font-weight: bold;
+		padding: 10px;
+		line-height: 24px;
+		margin: 0;
+		background: #EDEDED;
+		cursor: pointer;
+	}
+
+	.text {
+		padding: 10px;
+	}
+
+	.info {
+		width: 60%;
+		float: left;
+
+		h3 {
+			font-size: 24px;
+			font-weight: bold;
+			line-height: 24px;
+			margin: 0;
+			display: inline-block;
+			float: left;
+		}
+
+		h4 {
+			font-size: 18px;
+			font-style: italic;
+			line-height: 18px;
+			margin: 0;
+			display: inline-block;
+			clear: left;
+		}
+	}
+
+	.date {
+			font-size: 13px;
+			font-style: italic;
+			line-height: 13px;
+			margin: 0;
+			float: right;	
+		}
+
+}
+
+footer {
+	background: black;
+	padding: 10px;
+	color: white;
+	font-weight: normal;
+
+		p {
+			margin: 0;
+		}
+}

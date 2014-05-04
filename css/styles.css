@@ -341,15 +341,211 @@ table {
   border-spacing: 0;
 }
 
-/* line 5, ../sass/partials/_fonts.scss */
-* {
-  font-family: 'Open Sans', sans-serif;
+@font-face {
+  font-family: 'icomoon';
+  src: url("fonts/icomoon.eot?ar2nhp");
+  src: url("fonts/icomoon.eot?#iefixar2nhp") format("embedded-opentype"), url("fonts/icomoon.woff?ar2nhp") format("woff"), url("fonts/icomoon.ttf?ar2nhp") format("truetype"), url("fonts/icomoon.svg?ar2nhp#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 16, ../sass/partials/_fonts.scss */
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 30, ../sass/partials/_fonts.scss */
+.icon-envelope:before {
+  content: "\f0e0";
+}
+
+/* line 33, ../sass/partials/_fonts.scss */
+.icon-instagram:before {
+  content: "\f16d";
+}
+
+/* line 36, ../sass/partials/_fonts.scss */
+.icon-facebook:before {
+  content: "\e602";
 }
 
 /* line 7, ../sass/partials/_page.scss */
+* {
+  font-family: 'Open Sans', helvetica, sans-serif;
+}
+
+/* line 11, ../sass/partials/_page.scss */
 body, select, input, textarea {
   color: #222222;
   font-family: 'Open Sans', helvetica, sans-serif;
+}
+
+/* line 21, ../sass/partials/_page.scss */
+html {
+  width: 320px;
+}
+
+/* line 29, ../sass/partials/_page.scss */
+header {
+  position: fixed;
+  top: 0;
+  z-index: 100000;
+  background: white;
+  width: 100%;
+  max-width: 320px;
+}
+/* line 37, ../sass/partials/_page.scss */
+header #mc_embed_signup {
+  background: black;
+  padding: 10px;
+  color: white;
+}
+/* line 42, ../sass/partials/_page.scss */
+header #mc_embed_signup p {
+  float: left;
+}
+/* line 46, ../sass/partials/_page.scss */
+header #mc_embed_signup .close {
+  color: white;
+  text-shadow: none;
+  opacity: 1;
+}
+/* line 52, ../sass/partials/_page.scss */
+header #mc_embed_signup .btn {
+  width: 100%;
+}
+/* line 57, ../sass/partials/_page.scss */
+header nav {
+  padding: 10px;
+}
+/* line 60, ../sass/partials/_page.scss */
+header nav #navDropdown {
+  display: inline-block;
+  float: left;
+  margin-left: 34px;
+  margin-top: 5px;
+}
+/* line 68, ../sass/partials/_page.scss */
+header nav #navDropdown .bar {
+  display: block;
+  background: black;
+  width: 42px;
+  height: 6px;
+  border-radius: 3px;
+  margin-bottom: 2px;
+}
+/* line 79, ../sass/partials/_page.scss */
+header nav .navItems {
+  position: absolute;
+  top: -90000px;
+}
+/* line 84, ../sass/partials/_page.scss */
+header nav #logo {
+  float: left;
+}
+/* line 87, ../sass/partials/_page.scss */
+header nav #logo p {
+  margin: 0;
+}
+/* line 93, ../sass/partials/_page.scss */
+header nav #logo, header nav .social {
+  line-height: 44px;
+  font-size: 24px;
+  font-weight: bold;
+}
+/* line 99, ../sass/partials/_page.scss */
+header nav .social ul {
+  display: block;
+  float: right;
+  margin: 0;
+  padding: 0;
+}
+/* line 105, ../sass/partials/_page.scss */
+header nav .social ul li {
+  float: left;
+}
+/* line 108, ../sass/partials/_page.scss */
+header nav .social ul li a {
+  margin-right: 10px;
+}
+/* line 112, ../sass/partials/_page.scss */
+header nav .social ul li .icon-envelope {
+  margin: 0;
+}
+
+/* line 121, ../sass/partials/_page.scss */
+#main {
+  margin-top: 64px;
+}
+/* line 126, ../sass/partials/_page.scss */
+#main .current a {
+  display: block;
+}
+/* line 132, ../sass/partials/_page.scss */
+#main h2 {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 10px;
+  line-height: 24px;
+  margin: 0;
+  background: #EDEDED;
+  cursor: pointer;
+}
+/* line 142, ../sass/partials/_page.scss */
+#main .text {
+  padding: 10px;
+}
+/* line 146, ../sass/partials/_page.scss */
+#main .info {
+  width: 60%;
+  float: left;
+}
+/* line 150, ../sass/partials/_page.scss */
+#main .info h3 {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 24px;
+  margin: 0;
+  display: inline-block;
+  float: left;
+}
+/* line 159, ../sass/partials/_page.scss */
+#main .info h4 {
+  font-size: 18px;
+  font-style: italic;
+  line-height: 18px;
+  margin: 0;
+  display: inline-block;
+  clear: left;
+}
+/* line 169, ../sass/partials/_page.scss */
+#main .date {
+  font-size: 13px;
+  font-style: italic;
+  line-height: 13px;
+  margin: 0;
+  float: right;
+}
+
+/* line 179, ../sass/partials/_page.scss */
+footer {
+  background: black;
+  padding: 10px;
+  color: white;
+  font-weight: normal;
+}
+/* line 185, ../sass/partials/_page.scss */
+footer p {
+  margin: 0;
 }
 
 /* line 7, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-h5bp-0.1.2/stylesheets/h5bp/_helpers.scss */
@@ -1921,7 +2117,7 @@ textarea {
 
 /* line 48, ../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_scaffolding.scss */
 a {
-  color: #0000ee;
+  color: black;
   text-decoration: none;
 }
 /* line 53, ../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_scaffolding.scss */
@@ -4655,7 +4851,7 @@ select[multiple].input-lg,
 
 /* line 85, ../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_buttons.scss */
 .btn-link {
-  color: #0000ee;
+  color: black;
   font-weight: normal;
   cursor: pointer;
   border-radius: 0;
@@ -5363,7 +5559,7 @@ tbody.collapse.in {
 /* line 48, ../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_navs.scss */
 .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
   background-color: #eeeeee;
-  border-color: #0000ee;
+  border-color: black;
 }
 /* line 59, ../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_navs.scss */
 .nav .nav-divider {
@@ -6128,7 +6324,7 @@ tbody.collapse.in {
   padding: 6px 12px;
   line-height: 1.428571429;
   text-decoration: none;
-  color: #0000ee;
+  color: black;
   background-color: white;
   border: 1px solid #dddddd;
   margin-left: -1px;
@@ -6386,7 +6582,7 @@ a.label:hover, a.label:focus {
 }
 /* line 40, ../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_badges.scss */
 a.list-group-item.active > .badge, .nav-pills > .active > a > .badge {
-  color: #0000ee;
+  color: black;
   background-color: white;
 }
 /* line 44, ../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_badges.scss */
@@ -6481,7 +6677,7 @@ a.badge:hover, a.badge:focus {
 a.thumbnail:hover,
 a.thumbnail:focus,
 a.thumbnail.active {
-  border-color: #0000ee;
+  border-color: black;
 }
 
 /* line 9, ../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_alerts.scss */
