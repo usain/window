@@ -22,6 +22,11 @@ html {
 	width: 320px;
 }
 
+.stuck {
+  position: fixed;
+  width: 320px;
+}
+
 body {}
 
 #container {}
@@ -171,7 +176,7 @@ header {
 			font-style: italic;
 			line-height: 13px;
 			margin: 0;
-			float: right;	
+			float: right;
 		}
 
 }
