@@ -15,7 +15,7 @@ $(document).ready(function(){
 //init states
 
 	$mailchimpDraw.hide();
-	$exhibition.hide();
+	// $exhibition.hide();
 
 //mailchimp draw
 
@@ -44,11 +44,43 @@ $(document).ready(function(){
 
 //~~~~~~~~~~~~~~~~~ waypoints ~~~~~~~~~~~~~~~~~//
 
-	$('.current').waypoint(function(direction) {
-	  	console.log('Basic example callback triggered.'+ direction);
+	$('header').waypoint('sticky');
+
+	$('.onsite').waypoint('sticky', {
+  		offset: 64 // Apply "stuck" when element 30px from top
+
 	});
 
-	$('.onsite').waypoint('sticky');
+	$('.online').waypoint('sticky', {
+  		offset: 64 // Apply "stuck" when element 30px from top
+	});
+
+	$('h2').waypoint('sticky', {
+  		offset: 64 // Apply "stuck" when element 30px from top
+	});
+
+
+//~~~~~~~~~~~~~~~~~ animate onsite bar down ~~~~~~~~~~~~~~~~~//
+	// console.log($('.onsite').height());
+
+	// $('.onsite').waypoint(function(direction){
+
+	// 	$(this).stop().animate({
+
+	// 		top: $('.onsite').height()+$('nav').height()-2
+
+	// 		}, 'slow');
+
+	// 	if(direction==="up"){
+
+	// 		$('nav').stop().animate({
+
+	// 			top : 0
+
+	// 		}, 'slow');
+	// 	};
+
+	// });
 
 });//end of ready
 

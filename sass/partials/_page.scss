@@ -27,17 +27,22 @@ html {
   width: 320px;
 }
 
-body {}
+body {
+	-webkit-transition: all 4.0s ease-in-out;
+	-moz-transition: all 4.0s ease-in-out;
+	-ms-transition: all 4.0s ease-in-out;
+	-o-transition: all 4.0s ease-in-out;
+	transition: all 4.0s ease-in-out
+}
 
 #container {}
 
 header {
-		position: fixed;
-		top: 0;
-		z-index: 100000;
-		background: white;
-		width: 100%;
-		max-width: 320px;
+
+	z-index: 100000;
+	background: white;
+	width: 100%;
+	max-width: 320px;
 
 	#mc_embed_signup {
 		background: $mailchimp-background-color;
@@ -124,7 +129,6 @@ header {
 }
 
 #main {
-	margin-top: 64px;
 
 	.current{
 
@@ -190,4 +194,8 @@ footer {
 		p {
 			margin: 0;
 		}
+}
+
+h2.stuck {
+top: 64px;
 }
