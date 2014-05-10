@@ -342,16 +342,16 @@ table {
 }
 
 @font-face {
-  font-family: 'icomoon';
-  src: url("fonts/icomoon.eot?ar2nhp");
-  src: url("fonts/icomoon.eot?#iefixar2nhp") format("embedded-opentype"), url("fonts/icomoon.woff?ar2nhp") format("woff"), url("fonts/icomoon.ttf?ar2nhp") format("truetype"), url("fonts/icomoon.svg?ar2nhp#icomoon") format("svg");
+  font-family: 'window';
+  src: url("fonts/window.eot?-wlwn0t");
+  src: url("fonts/window.eot?#iefix-wlwn0t") format("embedded-opentype"), url("fonts/window.woff?-wlwn0t") format("woff"), url("fonts/window.ttf?-wlwn0t") format("truetype"), url("fonts/window.svg?-wlwn0t#window") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
 /* line 16, ../sass/partials/_fonts.scss */
 [class^="icon-"], [class*=" icon-"] {
-  font-family: 'icomoon';
+  font-family: 'window';
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -364,18 +364,43 @@ table {
 }
 
 /* line 30, ../sass/partials/_fonts.scss */
-.icon-envelope:before {
-  content: "\f0e0";
+.icon-instagram:before {
+  content: "\e607";
 }
 
 /* line 33, ../sass/partials/_fonts.scss */
-.icon-instagram:before {
-  content: "\f16d";
+.icon-uniE606:before {
+  content: "\e606";
 }
 
 /* line 36, ../sass/partials/_fonts.scss */
 .icon-facebook:before {
+  content: "\e601";
+}
+
+/* line 39, ../sass/partials/_fonts.scss */
+.icon-envelope:before {
+  content: "\e605";
+}
+
+/* line 42, ../sass/partials/_fonts.scss */
+.icon-arrow-down:before {
+  content: "\e600";
+}
+
+/* line 45, ../sass/partials/_fonts.scss */
+.icon-arrow-up:before {
   content: "\e602";
+}
+
+/* line 48, ../sass/partials/_fonts.scss */
+.icon-arrow-down2:before {
+  content: "\e603";
+}
+
+/* line 51, ../sass/partials/_fonts.scss */
+.icon-arrow-up2:before {
+  content: "\e604";
 }
 
 /* line 7, ../sass/partials/_page.scss */
@@ -409,46 +434,68 @@ body {
   transition: all 4s ease-in-out;
 }
 
-/* line 40, ../sass/partials/_page.scss */
+/* line 38, ../sass/partials/_page.scss */
+a:hover {
+  text-decoration: none !important;
+}
+
+/* line 42, ../sass/partials/_page.scss */
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 47, ../sass/partials/_page.scss */
+li {
+  list-style: none;
+}
+
+/* line 51, ../sass/partials/_page.scss */
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 58, ../sass/partials/_page.scss */
 header {
   z-index: 100000;
   background: white;
   width: 100%;
   max-width: 320px;
 }
-/* line 47, ../sass/partials/_page.scss */
+/* line 65, ../sass/partials/_page.scss */
 header #mc_embed_signup {
   background: black;
   padding: 10px;
   color: white;
 }
-/* line 52, ../sass/partials/_page.scss */
-header #mc_embed_signup p {
-  float: left;
-}
-/* line 56, ../sass/partials/_page.scss */
+/* line 70, ../sass/partials/_page.scss */
 header #mc_embed_signup .close {
   color: white;
   text-shadow: none;
   opacity: 1;
+  position: absolute;
+  right: 10px;
+  top: 10px;
 }
-/* line 62, ../sass/partials/_page.scss */
+/* line 79, ../sass/partials/_page.scss */
 header #mc_embed_signup .btn {
   width: 100%;
 }
-/* line 67, ../sass/partials/_page.scss */
+/* line 84, ../sass/partials/_page.scss */
 header nav {
   padding: 10px;
+  position: relative;
 }
-/* line 70, ../sass/partials/_page.scss */
-header nav #navDropdown {
+/* line 88, ../sass/partials/_page.scss */
+header nav #navButton {
   display: inline-block;
   float: left;
   margin-left: 34px;
-  margin-top: 5px;
+  margin-top: 10px;
 }
-/* line 78, ../sass/partials/_page.scss */
-header nav #navDropdown .bar {
+/* line 95, ../sass/partials/_page.scss */
+header nav #navButton .bar {
   display: block;
   background: black;
   width: 42px;
@@ -456,69 +503,86 @@ header nav #navDropdown .bar {
   border-radius: 3px;
   margin-bottom: 2px;
 }
-/* line 89, ../sass/partials/_page.scss */
+/* line 106, ../sass/partials/_page.scss */
 header nav .navItems {
+  margin: 0;
   position: absolute;
-  top: -90000px;
+  top: 64px;
+  left: 0;
+  background: white;
+  width: 100%;
+  min-width: 300px;
+  margin: 0 auto;
+  display: block;
+  display: none;
+  height: auto;
 }
-/* line 94, ../sass/partials/_page.scss */
+/* line 119, ../sass/partials/_page.scss */
+header nav .navItems li {
+  text-align: center;
+}
+/* line 124, ../sass/partials/_page.scss */
 header nav #logo {
   float: left;
 }
-/* line 97, ../sass/partials/_page.scss */
+/* line 127, ../sass/partials/_page.scss */
 header nav #logo p {
   margin: 0;
 }
-/* line 103, ../sass/partials/_page.scss */
+/* line 133, ../sass/partials/_page.scss */
 header nav #logo, header nav .social {
   line-height: 44px;
   font-size: 24px;
   font-weight: bold;
 }
-/* line 109, ../sass/partials/_page.scss */
+/* line 139, ../sass/partials/_page.scss */
 header nav .social ul {
   display: block;
   float: right;
   margin: 0;
   padding: 0;
 }
-/* line 115, ../sass/partials/_page.scss */
+/* line 145, ../sass/partials/_page.scss */
 header nav .social ul li {
   float: left;
 }
-/* line 118, ../sass/partials/_page.scss */
+/* line 148, ../sass/partials/_page.scss */
 header nav .social ul li a {
   margin-right: 10px;
 }
-/* line 122, ../sass/partials/_page.scss */
+/* line 152, ../sass/partials/_page.scss */
 header nav .social ul li .icon-envelope {
   margin: 0;
 }
 
-/* line 135, ../sass/partials/_page.scss */
-#main .current a {
+/* line 163, ../sass/partials/_page.scss */
+#main .current, #main .year {
+  margin: 20px 0;
+}
+/* line 166, ../sass/partials/_page.scss */
+#main .current a, #main .year a {
   display: block;
 }
-/* line 141, ../sass/partials/_page.scss */
+/* line 172, ../sass/partials/_page.scss */
 #main h2 {
   font-size: 24px;
   font-weight: bold;
   padding: 10px;
   line-height: 24px;
   margin: 0;
-  background: #EDEDED;
+  background: #ededed;
   cursor: pointer;
 }
-/* line 151, ../sass/partials/_page.scss */
+/* line 182, ../sass/partials/_page.scss */
 #main .text {
   padding: 10px;
 }
-/* line 155, ../sass/partials/_page.scss */
+/* line 186, ../sass/partials/_page.scss */
 #main .info {
   width: 60%;
   float: left;
 }
-/* line 159, ../sass/partials/_page.scss */
+/* line 190, ../sass/partials/_page.scss */
 #main .info h3 {
   font-size: 24px;
   font-weight: bold;
@@ -527,7 +591,7 @@ header nav .social ul li .icon-envelope {
   display: inline-block;
   float: left;
 }
-/* line 168, ../sass/partials/_page.scss */
+/* line 199, ../sass/partials/_page.scss */
 #main .info h4 {
   font-size: 18px;
   font-style: italic;
@@ -536,7 +600,7 @@ header nav .social ul li .icon-envelope {
   display: inline-block;
   clear: left;
 }
-/* line 178, ../sass/partials/_page.scss */
+/* line 209, ../sass/partials/_page.scss */
 #main .date {
   font-size: 13px;
   font-style: italic;
@@ -545,19 +609,45 @@ header nav .social ul li .icon-envelope {
   float: right;
 }
 
-/* line 188, ../sass/partials/_page.scss */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~ SINGLE PAGE ~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* line 221, ../sass/partials/_page.scss */
+.showText {
+  float: left;
+  margin-top: 20px;
+}
+
+/* line 226, ../sass/partials/_page.scss */
+.center {
+  text-align: center;
+  float: left;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+/* line 233, ../sass/partials/_page.scss */
+.center:hover {
+  background: #ededed;
+}
+
+/* line 240, ../sass/partials/_page.scss */
+.images li {
+  margin-top: 10px;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~ FOOTER ~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* line 249, ../sass/partials/_page.scss */
 footer {
   background: black;
   padding: 10px;
   color: white;
   font-weight: normal;
 }
-/* line 194, ../sass/partials/_page.scss */
+/* line 255, ../sass/partials/_page.scss */
 footer p {
   margin: 0;
 }
 
-/* line 199, ../sass/partials/_page.scss */
+/* line 260, ../sass/partials/_page.scss */
 h2.stuck {
   top: 64px;
 }

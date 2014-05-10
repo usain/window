@@ -1,20 +1,16 @@
-// font-face fonts
-// see http://compass-style.org/docs/reference/compass/css3/font_face/
-
-//@import "compass/css3/font-face"
 @font-face {
-	font-family: 'window';
-	src:url('fonts/window.eot?-wlwn0t');
-	src:url('fonts/window.eot?#iefix-wlwn0t') format('embedded-opentype'),
-		url('fonts/window.woff?-wlwn0t') format('woff'),
-		url('fonts/window.ttf?-wlwn0t') format('truetype'),
-		url('fonts/window.svg?-wlwn0t#window') format('svg');
+	font-family: 'plaza';
+	src:url('fonts/plaza.eot?-wlwn0t');
+	src:url('fonts/plaza.eot?#iefix-wlwn0t') format('embedded-opentype'),
+		url('fonts/plaza.woff?-wlwn0t') format('woff'),
+		url('fonts/plaza.ttf?-wlwn0t') format('truetype'),
+		url('fonts/plaza.svg?-wlwn0t#plaza') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
 
 [class^="icon-"], [class*=" icon-"] {
-	font-family: 'window';
+	font-family: 'plaza';
 	speak: none;
 	font-style: normal;
 	font-weight: normal;
@@ -27,16 +23,16 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.icon-instagram:before {
+.icon-uniE607:before {
 	content: "\e607";
 }
 .icon-uniE606:before {
 	content: "\e606";
 }
-.icon-facebook:before {
+.icon-facebook2:before {
 	content: "\e601";
 }
-.icon-envelope:before {
+.icon-mail:before {
 	content: "\e605";
 }
 .icon-arrow-down:before {
