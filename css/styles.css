@@ -555,14 +555,19 @@ video {
   height: auto;
 }
 
-/* line 132, ../sass/partials/_page.scss */
+/* line 130, ../sass/partials/_page.scss */
+.row {
+  margin: 0 !important;
+}
+
+/* line 137, ../sass/partials/_page.scss */
 header {
   z-index: 100000;
   background: white;
   width: 100%;
   min-width: 320px;
 }
-/* line 139, ../sass/partials/_page.scss */
+/* line 144, ../sass/partials/_page.scss */
 header #mc_embed_signup {
   z-index: 100000;
   display: none;
@@ -570,7 +575,7 @@ header #mc_embed_signup {
   padding: 10px;
   color: white;
 }
-/* line 146, ../sass/partials/_page.scss */
+/* line 151, ../sass/partials/_page.scss */
 header #mc_embed_signup .close {
   color: white;
   text-shadow: none;
@@ -579,16 +584,16 @@ header #mc_embed_signup .close {
   right: 10px;
   top: 10px;
 }
-/* line 155, ../sass/partials/_page.scss */
+/* line 160, ../sass/partials/_page.scss */
 header #mc_embed_signup .btn {
   width: 100%;
 }
-/* line 160, ../sass/partials/_page.scss */
+/* line 165, ../sass/partials/_page.scss */
 header nav {
   padding: 10px;
   position: relative;
 }
-/* line 164, ../sass/partials/_page.scss */
+/* line 169, ../sass/partials/_page.scss */
 header nav #navButton {
   display: inline-block;
   float: left;
@@ -596,7 +601,7 @@ header nav #navButton {
   top: 20px;
   left: 45%;
 }
-/* line 172, ../sass/partials/_page.scss */
+/* line 177, ../sass/partials/_page.scss */
 header nav #navButton .bar {
   display: block;
   background: black;
@@ -605,7 +610,7 @@ header nav #navButton .bar {
   border-radius: 3px;
   margin-bottom: 2px;
 }
-/* line 183, ../sass/partials/_page.scss */
+/* line 188, ../sass/partials/_page.scss */
 header nav .navItems {
   margin: 0;
   position: absolute;
@@ -618,53 +623,53 @@ header nav .navItems {
   display: none;
   height: auto;
 }
-/* line 195, ../sass/partials/_page.scss */
+/* line 200, ../sass/partials/_page.scss */
 header nav .navItems li {
   text-align: center;
 }
-/* line 200, ../sass/partials/_page.scss */
+/* line 205, ../sass/partials/_page.scss */
 header nav #logo {
   float: left;
 }
-/* line 203, ../sass/partials/_page.scss */
+/* line 208, ../sass/partials/_page.scss */
 header nav #logo p {
   margin: 0;
 }
-/* line 209, ../sass/partials/_page.scss */
+/* line 214, ../sass/partials/_page.scss */
 header nav #logo, header nav .social {
   line-height: 44px;
   font-size: 24px;
   font-weight: bold;
 }
-/* line 215, ../sass/partials/_page.scss */
+/* line 220, ../sass/partials/_page.scss */
 header nav .social ul {
   display: block;
   float: right;
   margin: 0;
   padding: 0;
 }
-/* line 221, ../sass/partials/_page.scss */
+/* line 226, ../sass/partials/_page.scss */
 header nav .social ul li {
   float: left;
 }
-/* line 224, ../sass/partials/_page.scss */
+/* line 229, ../sass/partials/_page.scss */
 header nav .social ul li a {
   margin-right: 10px;
 }
-/* line 228, ../sass/partials/_page.scss */
+/* line 233, ../sass/partials/_page.scss */
 header nav .social ul li .icon-envelope {
   margin: 0;
 }
 
-/* line 239, ../sass/partials/_page.scss */
+/* line 244, ../sass/partials/_page.scss */
 #main .current, #main .years {
   margin: 20px 0;
 }
-/* line 242, ../sass/partials/_page.scss */
+/* line 247, ../sass/partials/_page.scss */
 #main .current a, #main .years a {
   display: block;
 }
-/* line 248, ../sass/partials/_page.scss */
+/* line 253, ../sass/partials/_page.scss */
 #main h2 {
   font-size: 24px;
   font-weight: bold;
@@ -674,17 +679,17 @@ header nav .social ul li .icon-envelope {
   background: #ededed;
   cursor: pointer;
 }
-/* line 258, ../sass/partials/_page.scss */
+/* line 263, ../sass/partials/_page.scss */
 #main .text {
   padding: 10px;
 }
-/* line 262, ../sass/partials/_page.scss */
+/* line 267, ../sass/partials/_page.scss */
 #main .info {
   width: 60%;
   float: left;
   margin-bottom: 10px;
 }
-/* line 267, ../sass/partials/_page.scss */
+/* line 272, ../sass/partials/_page.scss */
 #main .info h3 {
   font-size: 24px;
   font-weight: bold;
@@ -693,7 +698,7 @@ header nav .social ul li .icon-envelope {
   display: inline-block;
   float: left;
 }
-/* line 276, ../sass/partials/_page.scss */
+/* line 281, ../sass/partials/_page.scss */
 #main .info h4 {
   font-size: 18px;
   font-style: italic;
@@ -703,7 +708,7 @@ header nav .social ul li .icon-envelope {
   clear: left;
   float: left;
 }
-/* line 287, ../sass/partials/_page.scss */
+/* line 292, ../sass/partials/_page.scss */
 #main .date {
   font-size: 13px;
   font-style: italic;
@@ -713,40 +718,40 @@ header nav .social ul li .icon-envelope {
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~ SINGLE PAGE ~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* line 301, ../sass/partials/_page.scss */
+/* line 306, ../sass/partials/_page.scss */
 .showText {
   float: left;
   margin-top: 20px;
 }
 
-/* line 306, ../sass/partials/_page.scss */
+/* line 311, ../sass/partials/_page.scss */
 .center {
   text-align: center;
   display: block;
   width: 100%;
   height: auto;
 }
-/* line 312, ../sass/partials/_page.scss */
+/* line 317, ../sass/partials/_page.scss */
 .center:hover {
   background: #ededed;
 }
 
-/* line 319, ../sass/partials/_page.scss */
+/* line 324, ../sass/partials/_page.scss */
 .images li {
   margin-top: 10px;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~ CONTACT PAGE ~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* line 327, ../sass/partials/_page.scss */
+/* line 332, ../sass/partials/_page.scss */
 .map {
   position: relative;
 }
-/* line 330, ../sass/partials/_page.scss */
+/* line 335, ../sass/partials/_page.scss */
 .map iframe {
   width: 100%;
   height: 500px;
 }
-/* line 335, ../sass/partials/_page.scss */
+/* line 340, ../sass/partials/_page.scss */
 .map .details {
   position: absolute;
   bottom: 0;
@@ -755,21 +760,21 @@ header nav .social ul li .icon-envelope {
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~ ABOUT PAGE ~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* line 346, ../sass/partials/_page.scss */
+/* line 351, ../sass/partials/_page.scss */
 .curator .year {
   margin: 0;
   font-style: italic;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~ FOOTER ~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* line 353, ../sass/partials/_page.scss */
+/* line 358, ../sass/partials/_page.scss */
 footer {
   background: black;
   padding: 10px;
   color: white;
   font-weight: normal;
 }
-/* line 359, ../sass/partials/_page.scss */
+/* line 364, ../sass/partials/_page.scss */
 footer p {
   margin: 0;
 }
