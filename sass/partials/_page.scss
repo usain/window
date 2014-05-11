@@ -19,12 +19,16 @@ body, select, input, textarea {
 // Add your own custom styles below
 //-----------------------------------
 html {
-	width: 320px;
+	min-width: 320px;
 }
 
 .stuck {
   position: fixed;
-  width: 320px;
+  width: 100%;
+}
+
+h2.stuck {
+top: 64px;
 }
 
 body {
@@ -35,6 +39,22 @@ body {
 	transition: all 4.0s ease-in-out
 }
 
+h3 {
+	font-size: 24px;
+	font-weight: bold !important;
+	line-height: 24px;
+	margin: 0 !important;
+	display: inline-block;
+}
+
+h4 {
+	font-size: 18px;
+	font-style: italic;
+	line-height: 18px;
+	margin: 0;
+	display: inline-block;
+}
+
 a:hover {
  	text-decoration: none !important;
 }
@@ -42,10 +62,18 @@ a:hover {
 ul {
 	padding: 0;
 	margin: 0;
+	li {
+		list-style: none;
+	}
 }
 
-li {
-	list-style: none;
+ol {
+	list-style-type: decimal;
+	padding: 0 0 0 30px;
+
+	li{
+		list-style: inherit;
+	}
 }
 
 video {
@@ -60,9 +88,10 @@ header {
 	z-index: 100000;
 	background: white;
 	width: 100%;
-	max-width: 320px;
+	min-width: 320px;
 
 	#mc_embed_signup {
+		display: none;
 		background: $mailchimp-background-color;
 		padding: 10px;
 		color: white;
@@ -88,8 +117,9 @@ header {
 			#navButton{
 			display: inline-block;
 			float: left;
-			margin-left: 34px;
-			margin-top: 10px;
+			position: absolute;
+			top: 20px;
+			left: 45%;
 
 
 				.bar {
@@ -112,7 +142,6 @@ header {
 				width: 100%;
 				min-width: 300px;
 				margin: 0 auto;
-				display: block;
 				display: none;
 				height: auto;
 
@@ -160,7 +189,7 @@ header {
 
 #main {
 
-	.current, .year {
+	.current, .years {
 		margin: 20px 0;
 
 		a {
@@ -203,6 +232,7 @@ header {
 			margin: 0;
 			display: inline-block;
 			clear: left;
+			float: left;
 		}
 	}
 
@@ -216,6 +246,8 @@ header {
 
 }
 
+
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~ SINGLE PAGE ~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 .showText {
@@ -225,7 +257,6 @@ header {
 
 .center {
 	text-align: center;
-	float: left;
 	display: block;
 	width: 100%;
 	height: auto;
@@ -243,6 +274,31 @@ header {
 
 }
 
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~ CONTACT PAGE ~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.map{
+	position: relative;
+
+	iframe {
+		width: 100%;
+		height: 500px;
+	}
+
+	.details {
+		position: absolute;
+		bottom: 0;
+		background: rgba(255,255,255,0.8);
+		font-weight: bold;
+	}
+
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~ ABOUT PAGE ~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.curator .year {
+	margin: 0;
+	font-style: italic;
+}
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~ FOOTER ~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
@@ -257,6 +313,4 @@ footer {
 		}
 }
 
-h2.stuck {
-top: 64px;
-}
+

@@ -48,6 +48,14 @@
 .icon-arrow-down2:before {
 	content: "\e603";
 }
+.icon-arrow-down-after:after {
+	content: "\e603";
+	float: right;
+}
 .icon-arrow-up2:before {
 	content: "\e604";
+}
+.icon-arrow-up-after:before {
+	content: "\e603";
+	float: right;
 }

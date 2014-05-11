@@ -7,10 +7,57 @@
 @media only screen and (min-width: 480px) {
   /* Style adjustments for viewports 480px and over go here */
 
+
+
+
 }
 
 @media only screen and (min-width: 768px) {
   /* Style adjustments for viewports 768px and over go here */
+
+  #main .current, #main .years {
+margin: 20px 0;
+width: 79%;
+margin: 20px auto;
+
+    a{
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+}
+
+#main .text {
+padding: 10px;
+max-width: 800px;
+margin: 0 auto;
+}
+
+.img-responsive {
+margin: 0 auto;
+}
+
+header nav #logo,
+header nav .social {
+    margin-right: 20px;
+}
+
+header nav #navButton {
+    display: none;
+}
+
+header nav .navItems{
+    display: block !important;
+    position: relative;
+    width: 320px;
+    top: 0;
+    float:  left;
+}
+
+.nav-stacked > li {
+    float: left !important;
+    margin-top: 0px !important;
+}
 
 }
 
@@ -23,6 +70,6 @@
 
 @media print {
   @include h5bp-media-print;
-  
+
   /* Style adjustments for print go here */
 }
