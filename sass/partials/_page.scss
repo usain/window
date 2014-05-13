@@ -46,7 +46,8 @@ body {
 	-moz-transition: all 4.0s ease-in-out;
 	-ms-transition: all 4.0s ease-in-out;
 	-o-transition: all 4.0s ease-in-out;
-	transition: all 4.0s ease-in-out
+	transition: all 4.0s ease-in-out;
+	margin-top: 64px;
 }
 
 h1 {
@@ -120,6 +121,9 @@ header {
 	background: white;
 	width: 100%;
 	min-width: 320px;
+	position: fixed;
+	z-index: 10000;
+      	top: 0;
 
 	#mc_embed_signup {
 		z-index: 100000;
@@ -145,6 +149,7 @@ header {
 	nav {
 		padding: 10px;
 		position: relative;
+		background: white;
 
 			#navButton{
 			display: inline-block;

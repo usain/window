@@ -829,7 +829,7 @@ hr {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: inherit;
-  font-weight: bold;
+  font-weight: 500;
   line-height: 1.1;
   color: inherit;
 }
@@ -8053,10 +8053,11 @@ body {
   -moz-transition: all 4.0s ease-in-out;
   -ms-transition: all 4.0s ease-in-out;
   -o-transition: all 4.0s ease-in-out;
-  transition: all 4s ease-in-out;
+  transition: all 4.0s ease-in-out;
+  margin-top: 64px;
 }
 
-/* line 52, ../sass/partials/_page.scss */
+/* line 53, ../sass/partials/_page.scss */
 h1 {
   line-height: 1.833333333333em;
   font-size: 24px;
@@ -8064,14 +8065,14 @@ h1 {
   margin: 0;
 }
 
-/* line 59, ../sass/partials/_page.scss */
+/* line 60, ../sass/partials/_page.scss */
 h2 {
   font-size: 1.5em;
   font-weight: bold !important;
   line-height: 1.5em;
 }
 
-/* line 65, ../sass/partials/_page.scss */
+/* line 66, ../sass/partials/_page.scss */
 h3 {
   font-size: 1.4em !important;
   font-weight: bold !important;
@@ -8080,7 +8081,7 @@ h3 {
   display: inline-block;
 }
 
-/* line 73, ../sass/partials/_page.scss */
+/* line 74, ../sass/partials/_page.scss */
 h4 {
   font-size: 1.125em !important;
   font-style: italic !important;
@@ -8090,51 +8091,54 @@ h4 {
   display: inline-block;
 }
 
-/* line 83, ../sass/partials/_page.scss */
+/* line 84, ../sass/partials/_page.scss */
 a:hover {
   text-decoration: none !important;
 }
 
-/* line 87, ../sass/partials/_page.scss */
+/* line 88, ../sass/partials/_page.scss */
 ul {
   padding: 0;
   margin: 0;
 }
-/* line 90, ../sass/partials/_page.scss */
+/* line 91, ../sass/partials/_page.scss */
 ul li {
   list-style: none;
 }
 
-/* line 95, ../sass/partials/_page.scss */
+/* line 96, ../sass/partials/_page.scss */
 ol {
   list-style-type: decimal;
   padding: 0 0 0 30px;
 }
-/* line 99, ../sass/partials/_page.scss */
+/* line 100, ../sass/partials/_page.scss */
 ol li {
   list-style: inherit;
 }
 
-/* line 104, ../sass/partials/_page.scss */
+/* line 105, ../sass/partials/_page.scss */
 video {
   width: 100%;
   max-width: 100%;
   height: auto;
 }
 
-/* line 110, ../sass/partials/_page.scss */
+/* line 111, ../sass/partials/_page.scss */
 .row {
   margin: 0 !important;
 }
 
-/* line 117, ../sass/partials/_page.scss */
+/* line 118, ../sass/partials/_page.scss */
 header {
   z-index: 100000;
   background: white;
   width: 100%;
   min-width: 320px;
+  position: fixed;
+  z-index: 10000;
+  top: 0;
 }
-/* line 124, ../sass/partials/_page.scss */
+/* line 128, ../sass/partials/_page.scss */
 header #mc_embed_signup {
   z-index: 100000;
   display: none;
@@ -8142,7 +8146,7 @@ header #mc_embed_signup {
   padding: 10px;
   color: white;
 }
-/* line 131, ../sass/partials/_page.scss */
+/* line 135, ../sass/partials/_page.scss */
 header #mc_embed_signup .close {
   color: white;
   text-shadow: none;
@@ -8151,16 +8155,17 @@ header #mc_embed_signup .close {
   right: 10px;
   top: 10px;
 }
-/* line 140, ../sass/partials/_page.scss */
+/* line 144, ../sass/partials/_page.scss */
 header #mc_embed_signup .btn {
   width: 100%;
 }
-/* line 145, ../sass/partials/_page.scss */
+/* line 149, ../sass/partials/_page.scss */
 header nav {
   padding: 10px;
   position: relative;
+  background: white;
 }
-/* line 149, ../sass/partials/_page.scss */
+/* line 154, ../sass/partials/_page.scss */
 header nav #navButton {
   display: inline-block;
   float: left;
@@ -8168,7 +8173,7 @@ header nav #navButton {
   top: 20px;
   left: 45%;
 }
-/* line 157, ../sass/partials/_page.scss */
+/* line 162, ../sass/partials/_page.scss */
 header nav #navButton .bar {
   display: block;
   background: black;
@@ -8177,7 +8182,7 @@ header nav #navButton .bar {
   border-radius: 3px;
   margin-bottom: 2px;
 }
-/* line 168, ../sass/partials/_page.scss */
+/* line 173, ../sass/partials/_page.scss */
 header nav .navItems {
   margin: 0;
   position: absolute;
@@ -8190,87 +8195,87 @@ header nav .navItems {
   display: none;
   height: auto;
 }
-/* line 180, ../sass/partials/_page.scss */
+/* line 185, ../sass/partials/_page.scss */
 header nav .navItems li {
   text-align: center;
 }
-/* line 183, ../sass/partials/_page.scss */
+/* line 188, ../sass/partials/_page.scss */
 header nav .navItems li a {
   font-size: 0.875em;
 }
-/* line 190, ../sass/partials/_page.scss */
+/* line 195, ../sass/partials/_page.scss */
 header nav #logo {
   float: left;
 }
-/* line 193, ../sass/partials/_page.scss */
+/* line 198, ../sass/partials/_page.scss */
 header nav #logo p {
   margin: 0;
 }
-/* line 199, ../sass/partials/_page.scss */
+/* line 204, ../sass/partials/_page.scss */
 header nav #logo, header nav .social {
   line-height: 44px;
   font-size: 24px;
   font-weight: bold;
 }
-/* line 205, ../sass/partials/_page.scss */
+/* line 210, ../sass/partials/_page.scss */
 header nav .social ul {
   display: block;
   float: right;
   margin: 0;
   padding: 0;
 }
-/* line 211, ../sass/partials/_page.scss */
+/* line 216, ../sass/partials/_page.scss */
 header nav .social ul li {
   float: left;
 }
-/* line 214, ../sass/partials/_page.scss */
+/* line 219, ../sass/partials/_page.scss */
 header nav .social ul li a {
   margin-right: 10px;
 }
-/* line 218, ../sass/partials/_page.scss */
+/* line 223, ../sass/partials/_page.scss */
 header nav .social ul li .icon-envelope {
   margin: 0;
 }
 
-/* line 229, ../sass/partials/_page.scss */
+/* line 234, ../sass/partials/_page.scss */
 #main .current, #main .years {
   margin: 20px 0;
 }
-/* line 232, ../sass/partials/_page.scss */
+/* line 237, ../sass/partials/_page.scss */
 #main .current a, #main .years a {
   display: block;
 }
-/* line 238, ../sass/partials/_page.scss */
+/* line 243, ../sass/partials/_page.scss */
 #main h2 {
   padding: 10px;
   margin: 0;
   background: #ededed;
   cursor: pointer;
 }
-/* line 245, ../sass/partials/_page.scss */
+/* line 250, ../sass/partials/_page.scss */
 #main .text {
   padding: 10px;
 }
-/* line 249, ../sass/partials/_page.scss */
+/* line 254, ../sass/partials/_page.scss */
 #main .info {
   width: 60%;
   float: left;
   margin-bottom: 10px;
 }
-/* line 254, ../sass/partials/_page.scss */
+/* line 259, ../sass/partials/_page.scss */
 #main .info h3 {
   margin: 0;
   display: inline-block;
   float: left;
 }
-/* line 260, ../sass/partials/_page.scss */
+/* line 265, ../sass/partials/_page.scss */
 #main .info h4 {
   margin: 0;
   display: inline-block;
   clear: left;
   float: left;
 }
-/* line 268, ../sass/partials/_page.scss */
+/* line 273, ../sass/partials/_page.scss */
 #main .date {
   font-size: 0.8125em;
   font-style: italic;
@@ -8280,30 +8285,30 @@ header nav .social ul li .icon-envelope {
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~ SINGLE PAGE ~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* line 282, ../sass/partials/_page.scss */
+/* line 287, ../sass/partials/_page.scss */
 .showText {
   float: left;
   margin-top: 20px;
 }
 
-/* line 287, ../sass/partials/_page.scss */
+/* line 292, ../sass/partials/_page.scss */
 .center {
   text-align: center;
   display: block;
   width: 100%;
   height: auto;
 }
-/* line 293, ../sass/partials/_page.scss */
+/* line 298, ../sass/partials/_page.scss */
 .center:hover {
   background: #ededed;
 }
 
-/* line 300, ../sass/partials/_page.scss */
+/* line 305, ../sass/partials/_page.scss */
 .images li {
   margin-top: 10px;
 }
 
-/* line 306, ../sass/partials/_page.scss */
+/* line 311, ../sass/partials/_page.scss */
 .img a {
   position: absolute;
   width: 100%;
@@ -8317,7 +8322,7 @@ header nav .social ul li .icon-envelope {
   transition: opacity 1s ease;
 }
 
-/* line 319, ../sass/partials/_page.scss */
+/* line 324, ../sass/partials/_page.scss */
 .img a:hover {
   /* IE9 SVG, needs conditional override of 'filter' to 'none' */
   background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjMwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjcwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
@@ -8344,16 +8349,16 @@ header nav .social ul li .icon-envelope {
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~ CONTACT PAGE ~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* line 339, ../sass/partials/_page.scss */
+/* line 344, ../sass/partials/_page.scss */
 .map {
   position: relative;
 }
-/* line 342, ../sass/partials/_page.scss */
+/* line 347, ../sass/partials/_page.scss */
 .map iframe {
   width: 100%;
   height: 500px;
 }
-/* line 347, ../sass/partials/_page.scss */
+/* line 352, ../sass/partials/_page.scss */
 .map .details {
   position: absolute;
   bottom: 0;
@@ -8362,23 +8367,42 @@ header nav .social ul li .icon-envelope {
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~ ABOUT PAGE ~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* line 358, ../sass/partials/_page.scss */
+/* line 363, ../sass/partials/_page.scss */
 .curator .year {
   margin: 0;
   font-style: italic;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~ FOOTER ~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* line 365, ../sass/partials/_page.scss */
+/* line 370, ../sass/partials/_page.scss */
 footer {
   background: black;
   padding: 10px;
   color: white;
   font-weight: normal;
 }
-/* line 371, ../sass/partials/_page.scss */
+/* line 376, ../sass/partials/_page.scss */
 footer p {
   margin: 0;
+}
+
+/* line 1, ../sass/partials/_scrollPattern.scss */
+.followMeBar {
+  position: relative;
+  z-index: 10000;
+}
+
+/* line 5, ../sass/partials/_scrollPattern.scss */
+.followMeBar.fixed {
+  position: fixed;
+  top: 64px;
+  width: 100%;
+  z-index: 10;
+}
+
+/* line 11, ../sass/partials/_scrollPattern.scss */
+.followMeBar.fixed.absolute {
+  position: absolute;
 }
 
 /* line 7, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-h5bp-0.1.2/stylesheets/h5bp/_helpers.scss */

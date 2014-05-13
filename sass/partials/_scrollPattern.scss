@@ -1,0 +1,13 @@
+        .followMeBar {
+            position: relative;
+            z-index: 10000;
+        }
+        .followMeBar.fixed {
+            position: fixed;
+            top: 64px;
+            width: 100%;
+            z-index: 10;
+        }
+        .followMeBar.fixed.absolute {
+            position: absolute;
+        }
