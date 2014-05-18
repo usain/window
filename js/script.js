@@ -15,25 +15,19 @@ $(document).ready(function(){
 		$navItems        		= $('.navItems'),
 		$main			= $('#main');
 
-//init states
-
-	$mailchimpDraw.hide();
-	$navItems.hide();
-	//$exhibition.hide();
-
 //~~~~~~~~~~~~~~~~~ placeholder ~~~~~~~~~~~~~~~~~//
 
 	$('input, textarea').placeholder();
 
-	var html;
-				if ($.fn.placeholder.input && $.fn.placeholder.textarea) {
-					html = '<strong>Your current browser natively supports <code>placeholder</code> for <code>input</code> and <code>textarea</code> elements.</strong> The plugin won’t run in this case, since it’s not needed. If you want to test the plugin, use an older browser ;)';
-				} else if ($.fn.placeholder.input) {
-					html = '<strong>Your current browser natively supports <code>placeholder</code> for <code>input</code> elements, but not for <code>textarea</code> elements.</strong> The plugin will only do its thang on the <code>textarea</code>s.';
-				}
-				if (html) {
-					$('<p class="note">' + html + '</p>').insertAfter('form');
-				}
+	// var html;
+	// 			if ($.fn.placeholder.input && $.fn.placeholder.textarea) {
+	// 				html = '<strong>Your current browser natively supports <code>placeholder</code> for <code>input</code> and <code>textarea</code> elements.</strong> The plugin won’t run in this case, since it’s not needed. If you want to test the plugin, use an older browser ;)';
+	// 			} else if ($.fn.placeholder.input) {
+	// 				html = '<strong>Your current browser natively supports <code>placeholder</code> for <code>input</code> elements, but not for <code>textarea</code> elements.</strong> The plugin will only do its thang on the <code>textarea</code>s.';
+	// 			}
+	// 			if (html) {
+	// 				$('<p class="note">' + html + '</p>').insertAfter('form');
+				 // }
 
 //mailchimp draw
 
@@ -62,30 +56,15 @@ $(document).ready(function(){
 
 //year draw
 
-	$yearClick.click(function(e){
+	// $('.followWrap').click(function(){
 
-		e.preventDefault();
-		//$(this).next().slideToggle(400);
-		$('.year').slideToggle(400);
+	// 	alert('this is clicked');
+	// 	// $(this).next('.years').slideDown();
 
-	});
+	// });
+
 
 //~~~~~~~~~~~~~~~~~ waypoints ~~~~~~~~~~~~~~~~~//
-
-	// $('header').waypoint('sticky');
-
-	// $('.onsite').waypoint('sticky', {
- //  		offset: 64 // Apply "stuck" when element 64px from top
-
-	// });
-
-	// $('.online').waypoint('sticky', {
- //  		offset: 64 // Apply "stuck" when element 64px from top
-	// });
-
-	// $('h2').waypoint('sticky', {
- //  		offset: 64 // Apply "stuck" when element 64px from top
-	// });
 
 function stickyTitles(stickies) {
 
@@ -147,10 +126,25 @@ function stickyTitles(stickies) {
 
 		});
 
+		$(window).resize(function(){
+
+			var newStickies = new stickyTitles(jQuery(".followMeBar"));
+
+			newStickies.load();
+
+			jQuery(window).on("scroll", function() {
+
+				  newStickies.scroll();
+
+			});
+// this gets really laggy after a few resizes, might be a way to reduce memory load by writing only necessary code in place of .scroll()
+		});
+
 
 //~~~~~~~~~~~~~~~~~ responsive videos ~~~~~~~~~~~~~~~~~//
 
 	$main.fitVids();
+
 
 //~~~~~~~~~~~~~~~~~ press release text toggle ~~~~~~~~~~~~~~~~~//
 

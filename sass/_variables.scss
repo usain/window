@@ -36,9 +36,9 @@
 // $text-color:            $gray-dark
 
 //* Global textual link color.
-// $link-color:            $brand-primary
+ //$link-color:            $brand-primary;
 //* Link hover color set via `darken()` function.
-// $link-hover-color:      darken($link-color, 15%)
+$link-hover-color:      #0000ff;
 
 //== Typography
 //
@@ -185,7 +185,7 @@ $headings-color:          inherit;
 //* `<input>` border radius
 // $input-border-radius:            $border-radius-base
 //* Border color for inputs on focus
-// $input-border-focus:             #66afe9
+ $input-border-focus:             white;
 
 //* Placeholder text color
 // $input-color-placeholder:        $gray-light
