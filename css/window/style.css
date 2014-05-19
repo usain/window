@@ -1,0 +1,49 @@
+@font-face {
+	font-family: 'plaza';
+	src:url('fonts/plaza.eot?-wlwn0t');
+	src:url('fonts/plaza.eot?#iefix-wlwn0t') format('embedded-opentype'),
+		url('fonts/plaza.woff?-wlwn0t') format('woff'),
+		url('fonts/plaza.ttf?-wlwn0t') format('truetype'),
+		url('fonts/plaza.svg?-wlwn0t#plaza') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'plaza';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-uniE607:before {
+	content: "\e607";
+}
+.icon-uniE606:before {
+	content: "\e606";
+}
+.icon-facebook2:before {
+	content: "\e601";
+}
+.icon-mail:before {
+	content: "\e605";
+}
+.icon-arrow-down:before {
+	content: "\e600";
+}
+.icon-arrow-up:before {
+	content: "\e602";
+}
+.icon-arrow-down2:before {
+	content: "\e603";
+}
+.icon-arrow-up2:before {
+	content: "\e604";
+}
