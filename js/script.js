@@ -64,175 +64,23 @@ $(document).ready(function(){
 	// });
 
 
-//~~~~~~~~~~~~~~~~~ waypoints ~~~~~~~~~~~~~~~~~//
-//
-	
-	$.waypoints('extendFn', 'stickies', function() {
+//~~~~~~~~~~~~~~~~~ instagram ~~~~~~~~~~~~~~~~~//
 
-		//alert('this is working');
+	$('#main').stickyHeaders({
+						onHeaderChange: function() { // When we scroll, trigger an event that tells us which header is currently at the top. We'll use this to update the select pulldown.
+							var headerId = $(this).attr('data-header');
+							$('#headerJumpSelect').val(headerId);
+						}
+					});
 
-		var stickies = $('.followMeBar');	      
-
-	  			  stickies.each(function(){
-
-	  				    var thisSticky = jQuery(this).wrap('<div class="followWrap" />');
-	  				        thisSticky.parent().height(thisSticky.outerHeight());
-
-	  				    jQuery.data(thisSticky[0], 'pos', thisSticky.offset().top-64);
-
-	  			  });
-	  		
-
-
-
-	  			  stickies.each(function(i){
-
-	  				    var thisSticky = jQuery(this),
-	  					      nextSticky = stickies.eq(i+1),
-	  					      prevSticky = stickies.eq(i-1),
-	  					      pos = jQuery.data(thisSticky[0], 'pos');
-
-	  				    if (pos <= jQuery(window).scrollTop()) {
-
-	  					      thisSticky.addClass("fixed");
-
-	  					      if (nextSticky.length > 0 && thisSticky.offset().top >= jQuery.data(nextSticky[0], 'pos') - thisSticky.outerHeight()) {
-
-	  						        thisSticky.addClass("absolute").css("top", jQuery.data(nextSticky[0], 'pos') - thisSticky.outerHeight()+64);
-
-	  					      }
-
-	  				    } else {
-
-	  					      thisSticky.removeClass("fixed");
-
-	  					      if (prevSticky.length > 0 && jQuery(window).scrollTop() <= jQuery.data(thisSticky[0], 'pos')  - prevSticky.outerHeight()) {
-
-	  						        prevSticky.removeClass("absolute").removeAttr("style");
-
-	  					      }
-
-	  				    }
-	  		    });
-
-	  });
-
-var newStickies = $(".followMeBar").waypoint('stickies');
-
-	// newStickies.load();
-
-
-	// $(window).waypoint(function(){
-
-	// 	var stickies = $(".followMeBar");
-	// 	//alert(newStickies);
-		
-	// 	stickies.each(function(i){
-
-	// 			    var thisSticky = jQuery(this),
-	// 				      nextSticky = stickies.eq(i+1),
-	// 				      prevSticky = stickies.eq(i-1),
-	// 				      pos = jQuery.data(thisSticky[0], 'pos');
-
-	// 			    if (pos <= jQuery(window).scrollTop()) {
-
-	// 				      thisSticky.addClass("fixed");
-
-	// 				      if (nextSticky.length > 0 && thisSticky.offset().top >= jQuery.data(nextSticky[0], 'pos') - thisSticky.outerHeight()) {
-
-	// 					        thisSticky.addClass("absolute").css("top", jQuery.data(nextSticky[0], 'pos') - thisSticky.outerHeight()+64);
-
-	// 				      }
-
-	// 			    } else {
-
-	// 				      thisSticky.removeClass("fixed");
-
-	// 				      if (prevSticky.length > 0 && jQuery(window).scrollTop() <= jQuery.data(thisSticky[0], 'pos')  - prevSticky.outerHeight()) {
-
-	// 					        prevSticky.removeClass("absolute").removeAttr("style");
-
-	// 				      }
-
-	// 			    }
-	// 	    });
-
+	// $('#headerJumpSelect').on('click', function(){ // When the select changes, jump to the matching header.
+	// 	var headerId = $(this).val();
+	// 	var position = $('.stickyHeader[data-header="' + headerId + '"]').attr('data-originalPOS');
+	// 	$('.stickyContainer').scrollTop(position);
 	// });
 
-// function stickyTitles(stickies) {
 
-//     this.load = function() {
-
-// 			  stickies.each(function(){
-
-// 				    var thisSticky = jQuery(this).wrap('<div class="followWrap" />');
-// 				        thisSticky.parent().height(thisSticky.outerHeight());
-
-// 				    jQuery.data(thisSticky[0], 'pos', thisSticky.offset().top-64);
-
-// 			  });
-// 		}
-
-// 		this.scroll = function() {
-
-// 			  stickies.each(function(i){
-
-// 				    var thisSticky = jQuery(this),
-// 					      nextSticky = stickies.eq(i+1),
-// 					      prevSticky = stickies.eq(i-1),
-// 					      pos = jQuery.data(thisSticky[0], 'pos');
-
-// 				    if (pos <= jQuery(window).scrollTop()) {
-
-// 					      thisSticky.addClass("fixed");
-
-// 					      if (nextSticky.length > 0 && thisSticky.offset().top >= jQuery.data(nextSticky[0], 'pos') - thisSticky.outerHeight()) {
-
-// 						        thisSticky.addClass("absolute").css("top", jQuery.data(nextSticky[0], 'pos') - thisSticky.outerHeight()+64);
-
-// 					      }
-
-// 				    } else {
-
-// 					      thisSticky.removeClass("fixed");
-
-// 					      if (prevSticky.length > 0 && jQuery(window).scrollTop() <= jQuery.data(thisSticky[0], 'pos')  - prevSticky.outerHeight()) {
-
-// 						        prevSticky.removeClass("absolute").removeAttr("style");
-
-// 					      }
-
-// 				    }
-// 		    });
-//     }
-// }
-
-
-
-		// var newStickies = new stickyTitles(jQuery(".followMeBar"));
-
-		// newStickies.load();
-
-		// jQuery(window).on("scroll", function() {
-
-		// 	  newStickies.scroll();
-
-		// });
-
-// 		$(window).resize(function(){
-
-// 			var newStickies = new stickyTitles(jQuery(".followMeBar"));
-
-// 			newStickies.load();
-
-// 			jQuery(window).on("scroll", function() {
-
-// 				  newStickies.scroll();
-
-// 			});
-// // this gets really laggy after a few resizes, might be a way to reduce memory load by writing only necessary code in place of .scroll()
-// 		});
-
+//~~~~~~~~~~~~~~~~~ instagram ~~~~~~~~~~~~~~~~~//
 
 //~~~~~~~~~~~~~~~~~ responsive videos ~~~~~~~~~~~~~~~~~//
 

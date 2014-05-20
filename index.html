@@ -12,13 +12,15 @@
     <meta content='' name='description'>
     <meta content='' name='author'>
     <meta content='width=device-width, initial-scale=1.0' name='viewport'>
+    <link rel="stylesheet" href="css/stickyheaders.css">
     <link href='css/normalize.css' rel='stylesheet'>
     <link href='css/styles.css' rel='stylesheet'>
+    
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700,800' rel='stylesheet' type='text/css'>
     <script src='js/modernizr-2.0.6.min.js'></script>
   </head>
   <body>
-    <div id='container'>
+    <div id='container' class="jquery-stickyheaders">
       <header>
         <!-- mailchimp draw -->
           <div id="mc_embed_signup" class="row">
@@ -98,9 +100,9 @@
         </nav>
       </header>
 <!--  main -->
-      <div id='main' role='main'>
+      <div id='main' role='main' class="stickyContainer">
 <!-- onsite -->
-      <h2 class="onsite followMeBar">Onsite <span class="icon-arrow-down-after"></span></h2>
+      <h2 class="onsite stickyHeader" data-header="1">Onsite <span class="icon-arrow-down-after"></span></h2>
         <div class="current clearfix">
 
       <div class="img">
@@ -120,7 +122,7 @@
           </div>
 <!-- onsite end -->
 <!-- online -->
-      <h2 class="online followMeBar">Online <span class="icon-arrow-down-after"></span></h2>
+      <h2 class="online stickyHeader" data-header="1">Online <span class="icon-arrow-down-after"></span></h2>
         <div class="current clearfix">
 
       <div class="img">
@@ -140,7 +142,7 @@
           </div>
 <!-- online end -->
 <!-- 2014 -->
-      <h2 class="click followMeBar">2014 <span class="icon-arrow-down-after"></span></h2>
+      <h2 class="click stickyHeader" data-header="1">2014 <span class="icon-arrow-down-after"></span></h2>
         <div class="years">
 
       <div class="img">
@@ -181,7 +183,7 @@
       </div>
       <!-- 2014 end -->
       <!-- 2013 -->
-      <h2 class="click followMeBar">2013 <span class="icon-arrow-down-after"></span></h2>
+      <h2 class="click stickyHeader" data-header="1">2013 <span class="icon-arrow-down-after"></span></h2>
         <div class="years">
 
       <div class="img">
@@ -198,7 +200,7 @@
       </div>
       <!-- 2013 end -->
       <!-- 2012 -->
-      <h2 class="click followMeBar">2012 <span class="icon-arrow-down-after"></span></h2>
+      <h2 class="click stickyHeader" data-header="1">2012 <span class="icon-arrow-down-after"></span></h2>
         <div class="years">
 
       <div class="img">
@@ -215,7 +217,7 @@
       </div>
       <!-- 2012 end -->
       <!-- 2011 -->
-      <h2 class="click followMeBar">2011 <span class="icon-arrow-down-after"></span></h2>
+      <h2 class="click stickyHeader" data-header="1">2011 <span class="icon-arrow-down-after"></span></h2>
         <div class="years">
 
       <div class="img">
@@ -232,7 +234,7 @@
       </div>
       <!-- 2011 end -->
       <!-- 2010 -->
-      <h2 class="click followMeBar">2010 <span class="icon-arrow-down-after"></span></h2>
+      <h2 class="click stickyHeader" data-header="1">2010 <span class="icon-arrow-down-after"></span></h2>
         <div class="years">
 
       <div class="img">
@@ -263,8 +265,7 @@
     </script>
     <script src='js/plugins.js'></script>
     <script src='js/jquery.placeholder.js'></script>
-    <script src='js/waypoints.js'></script>
-    <script src='js/waypoints-sticky.js'></script>
+    <script src='js/jquery.stickyheaders.js'></script>
     <script src='js/script.js'></script>
     <script>
       var _gaq=[["_setAccount","UA-XXXXX-X"],["_trackPageview"],["_trackPageLoadTime"]];
